@@ -3,4 +3,5 @@
 [![version](https://img.shields.io/badge/dynamic/json?color=blue&label=version&query=version&url=https%3A%2F%2Fapi.mcsrvstat.us%2F2%2Fetmc.xyz)](https://minecraft.fandom.com/wiki/Java_Edition_version_history)
 [![players](https://img.shields.io/badge/dynamic/json?color=red&label=players&query=players.online&url=https%3A%2F%2Fapi.mcsrvstat.us%2F2%2Fetmc.xyz&suffix=%20online)](https://etmc.xyz)
 
-projects for our whitelisted minecraft server
+projects for [etmc.xyz](https://etmc.xyz), a whitelisted minecraft server
+
