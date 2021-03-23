@@ -1768,7 +1768,7 @@
 
 .app--dark .mermaid .node circle,
 .app--dark .mermaid .node ellipse,
-.app--dark .mermaid .node polygon,
+.app--dark .mermaid .node olygon,
 .app--dark .mermaid .node rect {
 	fill: #bdd5ea;
 	stroke: purple;
@@ -2385,7 +2385,7 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 1.8em 0;
+	/*margin: 1.8em 0;*/
 	line-height: 1.33
 }
 
