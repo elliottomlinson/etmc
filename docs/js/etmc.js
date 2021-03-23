@@ -1,3 +1,14 @@
+function navmenu() {
+  var x = document.getElementById("mynavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
+//slideshow
+
 var index = 1;
 slideshow(index);
 

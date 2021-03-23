@@ -1,82 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- meta -->
   <title>etmc.xyz</title>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="elliot's minecraft server">
   <meta name="author" content="Elliot Tomlinson">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="msapplication-config" content="etc/browserconfig.xml"/>
-  <link rel="manifest" href="etc/site.webmanifest">
-
-  <!-- icon handlers -->
-  <link rel="shortcut icon" href="icon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
-  <link rel="icon" type="img/png" sizes="32x32" href="img/icon/favicon-32x32.png">
-  <link rel="icon" type="img/png" sizes="16x16" href="img/icon/favicon-16x16.png">
-  <link rel="mask-icon" href="img/icon/safari-pinned-tab.svg" color="#226eb8">
-
-  <!-- styles and scripts  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/etmc.css">
   <link rel="stylesheet" href="css/stackedit.css">
-  <script src="js/slides.js" async></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/etmc.js" async></script>
+  <script src="js/scroll.js" async></script>
 </head>
 
 <body>
-  <!-- header  -->
-  <div class="header">
+  <div class="navbar" id="mynavbar">
     <a href="#default" class="logo">etmc.xyz</a>
-    <div class="header-right">
-      <a class="active" href="#home">main</a>
-      <a href="#coordinates">coordinates</a>
-      <a href="#whitelist">whitelist</a>
-      <a href="http://status.etmc.xyz">status</a>
-      <a href="#about">map</a>
-    </div>
-  </div>
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="navmenu()">
+    <i class="fa fa-bars"></i>
+    </a>
 
-  <!-- statusbar  -->
-  <div class="statusbar">
-    <div class="statusbar-center">
-      <img src="https://img.shields.io/uptimerobot/status/m787595148-9c009d869db3657ba802118a" alt="status"></a>
-      <img src="https://img.shields.io/badge/dynamic/json?color=red&label=players&query=players.online&url=https%3A%2F%2Fapi.mcsrvstat.us%2F2%2Fetmc.xyz&suffix=%20online" alt ="currently online"></a>
-      <img src="https://img.shields.io/badge/dynamic/json?color=blue&amp;label=version&amp;query=version&amp;url=https%3A%2F%2Fapi.mcsrvstat.us%2F2%2Fetmc.xyz" alt="minecraft java version"></a>
-    </div>
   </div>
-</div>
-
-<div class="slideshow-container">
-  <div class="slides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="img/slideshow/1.png" style="width:100%">
-    <div class="text">Bridge Contruction Project (2020)</div>
-  </div>
-  <div class="slides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="img/slideshow/2.png" style="width:100%">
-    <div class="text">Oil Rig (2020)</div>
-  </div>
-  <div class="slides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="img/slideshow/3.png" style="width:100%">
-    <div class="text">Iron Farm (2021)</div>
-  </div>
-  <a style="text-decoration:none" class="prev" onclick="slidenav(-1)">&#10094;</a>
-  <a style="text-decoration:none" class="next" onclick="slidenav(1)">&#10095;</a>
-</div>
-<br>
 
 </body>
-
-<div class="footer">
-  <span class="helper"></span>
-  <a href="https://status.etmc.xyz/"><img src="https://img.shields.io/uptimerobot/status/m787595148-9c009d869db3657ba802118a" alt="status"></a>
-  <a href="https://etmc.xyz/"><img src="https://img.shields.io/badge/dynamic/json?color=red&label=players&query=players.online&url=https%3A%2F%2Fapi.mcsrvstat.us%2F2%2Fetmc.xyz&suffix=%20online" alt ="currently online"></a>
-  <a href="https://minecraft.fandom.com/wiki/Java_Edition_version_history"><img src="https://img.shields.io/badge/dynamic/json?color=blue&amp;label=version&amp;query=version&amp;url=https%3A%2F%2Fapi.mcsrvstat.us%2F2%2Fetmc.xyz" alt="version"></a>
-  etmc.xyz
-</div>
 
 </html>
