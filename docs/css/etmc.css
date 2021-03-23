@@ -6,7 +6,7 @@
   --invtext: #fff;
   --navbar: #eee;
   --accent: dodgerBlue;
-  --nav-hover: #999;
+  --nav-hover: #b9b9b9;
   --darkmode-hover: #649927;
 }
 
@@ -16,8 +16,8 @@
   --text: #c3bebe;
   --invtext: #fff;
   --navbar: #2c2d2e;
-  --accent:  #FF8D1E;
-  --nav-hover: #656565;
+  --accent:  #787878;
+  --nav-hover: #787878;
   --darkmode-hover: #da5050;
 }
 
@@ -52,7 +52,7 @@ body {
 
 .navbar a:hover {
   background-color: var(--nav-hover);
-  color: white;
+  color: var(--text);
 }
 
 .navbar a.active {
