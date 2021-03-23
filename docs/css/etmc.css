@@ -1,12 +1,11 @@
 /* -------------------- colours -------------------- */
- :root {
+:root {
   --bg: #fff;
   --logo: #000;
   --text: #000;
   --invtext: #fff;
   --navbar: #eee;
-  --accent: dodgerBlue;
-  --nav-hover: #b9b9b9;
+  --accent: #b9b9b9;
   --darkmode-hover: #649927;
 }
 
@@ -17,7 +16,6 @@
   --invtext: #fff;
   --navbar: #2c2d2e;
   --accent:  #787878;
-  --nav-hover: #787878;
   --darkmode-hover: #da5050;
 }
 
@@ -51,8 +49,8 @@ body {
 }
 
 .navbar a:hover {
-  background-color: var(--nav-hover);
-  color: var(--text);
+  background-color: var(--accent);
+  color: var(--invtext);
 }
 
 .navbar a.active {
