@@ -1,5 +1,6 @@
+//navbar
 function navmenu() {
-  var x = document.getElementById("mynavbar");
+  var x = document.getElementById("navbar");
   if (x.className === "navbar") {
     x.className += " responsive";
   } else {
@@ -7,26 +8,27 @@ function navmenu() {
   }
 }
 
-//slideshow
 
-var index = 1;
-slideshow(index);
 
-function slidenav(n) {
-  slideshow(index += n);
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
 }
 
-function visible(n) {
-  slideshow(index = n);
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }
 }
 
-function slideshow(n) {
-  var i;
-  var slides = document.getElementsByClassName("slides");
-  if (n > slides.length) {index = 1}
-  if (n < 1) {index = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[index-1].style.display = "block";
-}
+toggleSwitch.addEventListener('change', switchTheme, false);
