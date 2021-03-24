@@ -16,13 +16,16 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         <a href="{{ site.github.repository_url }}" class="btn">map</a>
-        <a href="https://status.etmc.xyz" class="btn">server status</a>
+        <a href="https://status.etmc.xyz" class="btn">status</a>
     </header>
 
     <main id="content" class="main-content" role="main">
       {{ content }}
 
       <footer class="site-footer">
+        <img src="https://img.shields.io/uptimerobot/status/m787595148-9c009d869db3657ba802118a" alt="status">
+        <img src="https://img.shields.io/badge/dynamic/json?color=red&label=players&query=players.online" alt="currently online">
+        <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=version&query=version" alt="minecraft java version">
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
       </footer>
     </main>
