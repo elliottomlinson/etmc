@@ -1,7 +1,7 @@
-* {box-sizing:border-box}
+
 
 .slideshow-container {
-  position: relative;
+  position:absolute;
   margin: none;
 }
 
