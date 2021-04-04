@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 
 {% seo %}
+  <title>etmc.xyz</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,16 +16,22 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title }}</h1>
       <br>
+<<<<<<< HEAD
         <a href="{{ site.github.repository_url }}" class="btn">live map</a>
         <a href="https://status.etmc.xyz" class="btn">server status</a>
+=======
+        <a href="http://66.11.114.34:8100/" class="btn">view map</a>
+        <a href="https://status.etmc.xyz" class="btn">server status</a>
+
+>>>>>>> 6eaa538afbb2ec17da210624d0ddacf0bb0712d6
     </header>
 
     <main id="content" class="main-content" role="main">
       {{ content }}
 
       <footer class="site-footer">
-        <img src="https://img.shields.io/uptimerobot/status/m787595148-9c009d869db3657ba802118a" alt="status">
-        <img src="https://img.shields.io/badge/dynamic/json?color=red&label=players&query=players.online&url=https%3A%2F%2Fapi.mcsrvstat.us%2F2%2Fetmc.xyz&suffix=%20online" alt="currently online">
+        <a href="https://status.etmc.xyz"><img src="https://img.shields.io/uptimerobot/status/m787595148-9c009d869db3657ba802118a" alt="status"></a>
+        <img src="https://img.shields.io/badge/dynamic/json?color=red&label=players&query=players.online&url=https%3A%2F%2Fapi.mcsrvstat.us%2F2%2Fetmc.xyz&suffix=%20online" alt="players online">
         <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=version&query=version&url=https%3A%2F%2Fapi.mcsrvstat.us%2F2%2Fetmc.xyz" alt="minecraft java version">
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
       </footer>
