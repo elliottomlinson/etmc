@@ -5,7 +5,8 @@
   position: relative;
   margin: auto;
 }
-.mySlides {
+
+.slideshow {
   display: none;
 }
 .prev, .next {
