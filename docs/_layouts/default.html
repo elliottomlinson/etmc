@@ -13,10 +13,10 @@
   </head>
   <body>
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h1 class="project-name">{{ page.title | default: site.title }}</h1>
       <br>
-        <a href="{{ site.github.repository_url }}" class="btn">map</a>
-        <a href="https://status.etmc.xyz" class="btn">status</a>
+        <a href="{{ site.github.repository_url }}" class="btn">live map</a>
+        <a href="https://status.etmc.xyz" class="btn">server status</a>
     </header>
 
     <main id="content" class="main-content" role="main">
