@@ -1,99 +1,96 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
   <title>etmc.xyz</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 
-        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-            <link rel="stylesheet" href="../assets/css/etmc.css">
-            <style>
-body {font-family: Monospace, sans-serif; margin:0}
-</style>
-  </head>
-  <body>
-    <header class="page-header" role="banner">
-      <h1 class="project-name">etmc.xyz</h1>
-      <br>
-        <a href="http://66.11.114.34:8100/" class="btn">view map</a>
-        <a href="https://status.etmc.xyz" class="btn">server status</a>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="../assets/css/etmc.css">
+</head>
+<body>
+  <header class="page-header" role="banner">
+    <h1 class="project-name">etmc.xyz</h1>
+    <br>
+    <a href="http://66.11.114.34:8100/" class="btn">view map</a>
+    <a href="https://status.etmc.xyz" class="btn">server status</a>
 
-    </header><br>
+  </header><br>
 
-    <div class="slideshow-container">
+  <div class="slideshow-container">
 
-      <!-- Full-width images with number and caption text -->
-      <div class="slideshow fade">
-        <div class="numbertext">1 / 4</div>
-        <img src="../assets/images/1.png" style="width:100%">
-        <div class="text">March 2020 Bridge Construction Project</div>
-      </div>
-
-      <div class="slideshow fade">
-        <div class="numbertext">2 / 4</div>
-        <img src="../assets/images/2.png" style="width:100%">
-        <div class="text">Oil Rig</div>
-      </div>
-
-      <div class="slideshow fade">
-        <div class="numbertext">3 / 4</div>
-        <img src="../assets/images/3.png" style="width:100%">
-        <div class="text">Jan 2021 Iron Farm Interior</div>
-      </div>
-
-      <div class="slideshow fade">
-        <div class="numbertext">4 / 4</div>
-        <img src="../assets/images/4.png" style="width:100%">
-        <div class="text">Our Server in 2011</div>
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!-- Full-width images with number and caption text -->
+    <div class="slideshow fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="../assets/images/1.png" style="width:100%">
+      <div class="text">March 2020 Bridge Construction Project</div>
     </div>
 
-    <main id="content" class="main-content" role="main">
+    <div class="slideshow fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="../assets/images/2.png" style="width:100%">
+      <div class="text">Oil Rig</div>
+    </div>
 
-      <!-- Slideshow container -->
+    <div class="slideshow fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="../assets/images/3.png" style="width:100%">
+      <div class="text">Jan 2021 Iron Farm Interior</div>
+    </div>
 
-<br>
+    <div class="slideshow fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="../assets/images/4.png" style="width:100%">
+      <div class="text">Our Server in 2011</div>
+    </div>
 
-      <footer class="site-footer"><br>
-          <span class="site-footer-owner"><a href="https://github.com/elliotomlinson/etmc">etmc.xyz</a> is maintained by <a href="https://elliot.tk/">elliottomlinson</a></span>
-      </footer>
-    </main>
-    <script>
-var slideIndex = 1;
-showSlides(slideIndex);
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  <main id="content" class="main-content" role="main">
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    <!-- Slideshow container -->
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slideshow");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+    <br>
+
+    <footer class="site-footer"><br>
+      <span class="site-footer-owner"><a href="https://github.com/elliotomlinson/etmc">etmc.xyz</a> is maintained by <a href="https://elliot.tk/">elliottomlinson</a></span>
+    </footer>
+  </main>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slideshow");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
+    }
+    for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
 </script>
-  </body>
+</body>
 </html>
