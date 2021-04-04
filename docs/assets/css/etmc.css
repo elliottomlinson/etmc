@@ -17,7 +17,7 @@ a:hover {
 
 .slideshow-container {
   position:relative;
-  margin: none;
+  margin: auto;
 }
 
 .slideshow {
