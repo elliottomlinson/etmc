@@ -7,8 +7,12 @@ a:link {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .main-content {
-  position:absolute
+  position:inherit
 }
 
 .slideshow-container {
