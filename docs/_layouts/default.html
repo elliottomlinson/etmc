@@ -2,8 +2,6 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-
-{% seo %}
   <title>etmc.xyz</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
@@ -14,7 +12,7 @@
   </head>
   <body>
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title }}</h1>
+      <h1 class="project-name">etmc.xyz</h1>
       <br>
         <a href="https://66.11.114.34:8100/" class="btn">view map</a>
         <a href="https://status.etmc.xyz" class="btn">server status</a>
@@ -23,15 +21,13 @@
 
     <main id="content" class="main-content" role="main">
 
-      <iframe frameborder="0" height="95%" src="https://66.11.114.34:8100/#world:160:0:-64:500:0:0:0:0:perspective" width="100%"></iframe>
-
       {{ content }}
 
       <footer class="site-footer">
         <a href="https://status.etmc.xyz"><img src="https://img.shields.io/uptimerobot/status/m787595148-9c009d869db3657ba802118a" alt="status"></a>
         <img src="https://img.shields.io/badge/dynamic/json?color=red&label=players&query=players.online&url=https%3A%2F%2Fapi.mcsrvstat.us%2F2%2Fetmc.xyz&suffix=%20online" alt="players online">
         <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=version&query=version&url=https%3A%2F%2Fapi.mcsrvstat.us%2F2%2Fetmc.xyz" alt="minecraft java version">
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+          <span class="site-footer-owner"><a href="https://github.com/elliotomlinson/etmc">etmc.xyz</a> is maintained by <a href="https://elliot.tk/">elliottomlinson</a>.</span>
       </footer>
     </main>
   </body>
